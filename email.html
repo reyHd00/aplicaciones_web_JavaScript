@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Validar email</title>
+	<link rel="stylesheet" type="text/css" href="style_email.css">
+</head>
+<body>
+	<form novalidate>
+  <p>
+    <label for="mail">
+      <span>Por favor, introduzca una dirección de correo electrónico: </span>
+      <input type="email" id="mail" name="mail" required minlength="8">
+      <span class="error" aria-live="polite"></span>
+    </label>
+  </p>
+  <button>Enviar</button>
+</form>
+	<script type="text/javascript" src="validacion.js"></script>
+</body>
+</html>

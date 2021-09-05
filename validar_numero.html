@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Validacion Numerica</title>
+</head>
+<body>
+	<h2>Validacion Numerica con JavaScript</h2>
+
+	<p>Por favor introduzca un valor numerico:</p>
+
+	<input id="numb">
+
+	<button type="button" onclick="validarNumero()">Submit</button>
+
+	<!--<p id="demo">Hei</p>-->
+
+	<script>
+
+		function validarNumero() {
+			let dato = document.getElementById("numb").value;
+	  		//let text;
+       		if (!/^([0-9])*$/.test(dato)){
+          		alert("El valor " + dato + " no es un número entero");
+       		}
+      	}
+	</script>
+</body>
+</html>
